@@ -12,8 +12,8 @@ def get_options(args=None):
     parser.add_argument('--problem', default='mcsrp', help="The problem to solve, default 'tsp'")
     parser.add_argument('--graph_size', type=int, default=100, help="The size of the problem graph")
     parser.add_argument('--station_size', type=int, default=11, help="The number of the charging stations")
-    parser.add_argument('--batch_size', type=int, default=64, help='Number of instances per batch during training')
-    parser.add_argument('--epoch_size', type=int, default=128000, help='Number of instances per epoch during training')
+    parser.add_argument('--batch_size', type=int, default=1024, help='Number of instances per batch during training')
+    parser.add_argument('--epoch_size', type=int, default=1280000, help='Number of instances per epoch during training')
     parser.add_argument('--val_size', type=int, default=10000,
                         help='Number of instances used for reporting validation performance')
     parser.add_argument('--val_dataset', type=str, default=None, help='Dataset file to use for validation')
